@@ -62,9 +62,10 @@ Text-only prompts tend to produce wobbly fences and impossible construction. For
 
 ## What was produced (Nov 2026)
 
-- **Method:** first and last frame with FLUX 3 Video, native 4K (3840×2176), 12 s, 24 fps, no audio.
+- **Method:** first and last frame with FLUX 3 Video, native 4K (3840×2176), 10.5 s after the edit below, 24 fps, no audio.
 - **End frame:** generated with GPT Image 2.6, using two real Chalk photos as fence references (Project 1 lawn and Project 6 fence close-up).
 - **Start frame:** an edit of the end frame that removes everything except the low brick walls, leaving bare raked soil.
-- **Sequence:** posts drop in, the slats build up, the gate drops in, sleeper edging drops in, turf unrolls, the plants settle, the olive tree in its oak planter drops in, and the scene holds.
+- **Sequence:** posts drop in, the slats build up, the gate drops in, sleeper edging drops in, turf unrolls once, the plants settle, the olive tree in its oak planter drops in, and the scene holds.
 - **Site files:** `img/hero.mp4` (1920 wide, about 7 MB) and `img/hero-mobile.mp4` (1280 wide, about 3 MB, served under 820 px). The film plays once and rests on the finished garden. The poster image is `img/hero-poster.jpg`.
 - **4K master:** kept outside the repo (about 147 MB).
+- **Edit:** the model unrolled the turf twice (4.25–5.6 s and again 5.75–7.5 s). The repeat was cut out (7.07 s joined back to 5.58 s with a 0.2 s cross-fade), so the turf now rolls out once.
