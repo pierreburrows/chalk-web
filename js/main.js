@@ -51,7 +51,7 @@
   startSequence();
 
   if (video && video.dataset.src) {
-    video.src = video.dataset.src;
+    video.src = matchMedia('(max-width: 820px)').matches ? video.dataset.src.replace('hero.mp4', 'hero-mobile.mp4') : video.dataset.src;
     video.addEventListener('canplay', () => {
       clearInterval(timer);
       hero.classList.add('has-video');

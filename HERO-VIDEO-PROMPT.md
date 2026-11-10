@@ -57,3 +57,14 @@ Text-only prompts tend to produce wobbly fences and impossible construction. For
 - **If the model limits clips to 5–10 s**, generate two clips: (a) bare ground to finished fence, then (b) using clip a's last frame as the start, turf and planting to golden hour. Join them with a short cross-dissolve.
 - **Upscale** with a video upscaler (Topaz Video AI, or the upscale tool in your generator) to 4K, then compress for the web as shown in the spec above.
 - **Keep it honest.** Under the film, the site shows only real Chalk projects, so the hero should feel like an idealised version of their real work: slatted fencing, sleepers and turf, which is exactly what Project 1 shows.
+
+---
+
+## What was produced (Nov 2026)
+
+- **Method:** first and last frame with FLUX 3 Video, native 4K (3840×2176), 12 s, 24 fps, no audio.
+- **End frame:** generated with GPT Image 2.6, using two real Chalk photos as fence references (Project 1 lawn and Project 6 fence close-up).
+- **Start frame:** an edit of the end frame that removes everything except the low brick walls, leaving bare raked soil.
+- **Sequence:** posts drop in, the slats build up, the gate drops in, sleeper edging drops in, turf unrolls, the plants settle, the olive tree in its oak planter drops in, and the scene holds.
+- **Site files:** `img/hero.mp4` (1920 wide, about 7 MB) and `img/hero-mobile.mp4` (1280 wide, about 3 MB, served under 820 px). The film plays once and rests on the finished garden. The poster image is `img/hero-poster.jpg`.
+- **4K master:** kept outside the repo (about 147 MB).
