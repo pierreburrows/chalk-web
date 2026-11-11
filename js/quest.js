@@ -283,3 +283,46 @@
     io.observe(score);
   }
 })();
+
+/* ================= SERVICES ================= */
+(() => {
+  const sec = document.querySelector('.services');
+  if (!sec) return;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const countUp = () => sec.querySelectorAll('[data-count]').forEach(n => {
+    const to = +n.dataset.count;
+    if (reduced) { n.textContent = to; return; }
+    const t0 = performance.now(), dur = 1300;
+    const tick = now => { const p = Math.min(1, (now - t0) / dur); n.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(tick); };
+    setTimeout(() => requestAnimationFrame(tick), 500);
+  });
+  const io = new IntersectionObserver(([e]) => {
+    if (e.isIntersecting) { sec.classList.add('is-in'); countUp(); io.disconnect(); }
+  }, { threshold: 0.18 });
+  io.observe(sec);
+
+  if (reduced) return;
+  // drifting slat background
+  const bg = sec.querySelector('.services__bg');
+  addEventListener('scroll', () => {
+    const r = sec.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > innerHeight) return;
+    bg.style.setProperty('--py', (r.top * -0.12).toFixed(1) + 'px');
+  }, { passive: true });
+
+  // 3D tilt on hover (mouse only)
+  if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  sec.querySelectorAll('.service').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      if (!sec.classList.contains('is-in')) return;
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+      card.classList.add('is-tilting');
+      card.style.transform = `rotateY(${x * 7}deg) rotateX(${-y * 7}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.classList.remove('is-tilting');
+      card.style.transform = '';
+    });
+  });
+})();
