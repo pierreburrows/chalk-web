@@ -97,22 +97,7 @@
   lb.addEventListener('click', () => lb.classList.remove('is-open'));
   addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('is-open'); });
 
-  /* enquiry form -> pre-filled email */
-  $('#enquiry').addEventListener('submit', e => {
-    e.preventDefault();
-    const f = new FormData(e.target);
-    const interests = f.getAll('interest').join(', ') || '—';
-    const body = [
-      `Name: ${f.get('name')}`,
-      `Phone: ${f.get('phone') || '—'}`,
-      `Email: ${f.get('email')}`,
-      `Postcode: ${f.get('postcode') || '—'}`,
-      `Interested in: ${interests}`,
-      '',
-      f.get('message') || ''
-    ].join('\n');
-    location.href = `mailto:oliver@chalkprojects.co.uk?subject=${encodeURIComponent('Project enquiry — ' + f.get('name'))}&body=${encodeURIComponent(body)}`;
-  });
+  /* enquiry form lives in js/quest.js */
 
   $('#year').textContent = new Date().getFullYear();
 })();

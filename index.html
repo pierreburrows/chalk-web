@@ -322,38 +322,58 @@
 <!-- ============ REVIEWS ============ -->
 <section class="reviews" id="reviews">
   <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow eyebrow--light">Kind words</p>
-      <h2 class="h2">Recommended by every client who's reviewed us.</h2>
+    <div class="reviews__head">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--light">Kind words</p>
+        <h2 class="h2">Recommended by every client who's reviewed us.</h2>
+      </div>
+      <div class="score reveal" aria-label="Rated 5 out of 5 from 6 recommendations">
+        <div class="score__num"><span data-count="5" data-decimals="1">0.0</span></div>
+        <div class="score__stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="score__meta"><b data-count="6">0</b> recommendations · <b data-count="100">0</b>% would recommend</div>
+      </div>
     </div>
-    <div class="reviews__track">
-      <blockquote class="review">
-        <p>“We had a great experience working with Oli on our garden renovations. He took the time to understand our ideas and helped us properly think through the vision and best approach, which made a huge difference.”</p>
-        <footer>Nat D. <span>Garden renovation</span></footer>
-      </blockquote>
-      <blockquote class="review">
-        <p>“Highly recommend Oli and Vincent. Clear communication, fair and transparent pricing and they even found ways to save money along the way. Neat and tidy too.”</p>
-        <footer>Faramade A. <span>Landscaping</span></footer>
-      </blockquote>
-      <blockquote class="review">
-        <p>“He guided us through the decking process with patience, thoroughly outlining our options and completed the project to a very high standard.”</p>
-        <footer>Zoe L. <span>Decking</span></footer>
-      </blockquote>
-      <blockquote class="review">
-        <p>“Oli tackled several tricky jobs for me including gate repairs which had outwitted quite a few previous DIY types! I would hesitate to recommend him only because I would like to keep him for myself!”</p>
-        <footer>Fiona F. <span>Gates &amp; repairs</span></footer>
-      </blockquote>
-      <blockquote class="review">
-        <p>“Oli did a brilliant job with landscaping jobs in our garden. He also put up shelves, decorated and helped with numerous internal work. Competent and reliable. Very pleased.”</p>
-        <footer>Keith G. <span>Landscaping &amp; interiors</span></footer>
-      </blockquote>
-      <blockquote class="review">
-        <p>“Oli did a fantastic job putting up fencing in my garden, which makes my garden look so much better. Highly recommend him.”</p>
-        <footer>Annabel S. <span>Fencing</span></footer>
-      </blockquote>
-    </div>
-    <p class="reviews__src">From recommendations on our Facebook page, Chalk Projects.</p>
   </div>
+
+  <div class="marquee" data-dir="left">
+    <div class="marquee__track">
+      <blockquote class="review">
+        <div class="review__stars" aria-label="5 stars"><i></i><i></i><i></i><i></i><i></i></div>
+        <p>“We had a great experience working with Oli on our garden renovations. He took the time to understand our ideas and helped us properly think through the vision and best approach, which made a huge difference.”</p>
+        <footer><span class="review__avatar" aria-hidden="true">N</span><span>Nat D.<small>Garden renovation</small></span></footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="review__stars" aria-label="5 stars"><i></i><i></i><i></i><i></i><i></i></div>
+        <p>“Highly recommend Oli and Vincent. Clear communication, fair and transparent pricing and they even found ways to save money along the way. Neat and tidy too.”</p>
+        <footer><span class="review__avatar" aria-hidden="true">F</span><span>Faramade A.<small>Landscaping</small></span></footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="review__stars" aria-label="5 stars"><i></i><i></i><i></i><i></i><i></i></div>
+        <p>“He guided us through the decking process with patience, thoroughly outlining our options and completed the project to a very high standard.”</p>
+        <footer><span class="review__avatar" aria-hidden="true">Z</span><span>Zoe L.<small>Decking</small></span></footer>
+      </blockquote>
+    </div>
+  </div>
+  <div class="marquee" data-dir="right">
+    <div class="marquee__track">
+      <blockquote class="review">
+        <div class="review__stars" aria-label="5 stars"><i></i><i></i><i></i><i></i><i></i></div>
+        <p>“Oli tackled several tricky jobs for me including gate repairs which had outwitted quite a few previous DIY types! I would hesitate to recommend him only because I would like to keep him for myself!”</p>
+        <footer><span class="review__avatar" aria-hidden="true">F</span><span>Fiona F.<small>Gates &amp; repairs</small></span></footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="review__stars" aria-label="5 stars"><i></i><i></i><i></i><i></i><i></i></div>
+        <p>“Oli did a brilliant job with landscaping jobs in our garden. He also put up shelves, decorated and helped with numerous internal work. Competent and reliable. Very pleased.”</p>
+        <footer><span class="review__avatar" aria-hidden="true">K</span><span>Keith G.<small>Landscaping &amp; interiors</small></span></footer>
+      </blockquote>
+      <blockquote class="review">
+        <div class="review__stars" aria-label="5 stars"><i></i><i></i><i></i><i></i><i></i></div>
+        <p>“Oli did a fantastic job putting up fencing in my garden, which makes my garden look so much better. Highly recommend him.”</p>
+        <footer><span class="review__avatar" aria-hidden="true">A</span><span>Annabel S.<small>Fencing</small></span></footer>
+      </blockquote>
+    </div>
+  </div>
+  <div class="wrap"><p class="reviews__src">From recommendations on our Facebook page, Chalk Projects. Hover to pause.</p></div>
 </section>
 
 <!-- ============ ABOUT ============ -->
@@ -374,37 +394,158 @@
 
 <!-- ============ CONTACT ============ -->
 <section class="contact" id="contact">
-  <div class="wrap contact__grid">
-    <div>
-      <p class="eyebrow eyebrow--light">Planning a project?</p>
-      <h2 class="h2">If you value craftsmanship, let's talk.</h2>
-      <p class="contact__lede">Tell us a little about your space and what you have in mind. We'll come back to you to arrange a visit.</p>
+  <div class="wrap">
+    <div class="contact__top">
+      <div>
+        <p class="eyebrow eyebrow--light">Planning a project?</p>
+        <h2 class="h2">Build your garden. <em>Five quick steps.</em></h2>
+        <p class="contact__lede">Answer a few questions and watch your garden take shape. Oli will get back to you to arrange a visit.</p>
+      </div>
       <ul class="contact__list">
         <li><span>Call</span><a href="tel:+447818005353">07818 005353</a></li>
         <li><span>Email</span><a href="mailto:oliver@chalkprojects.co.uk">oliver@chalkprojects.co.uk</a></li>
         <li><span>Based</span>Hove, East Sussex</li>
       </ul>
     </div>
-    <form class="form" id="enquiry">
-      <div class="form__row">
-        <label>Name<input name="name" required autocomplete="name"></label>
-        <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+
+    <div class="quest">
+      <!-- the garden that builds as you answer -->
+      <div class="board" aria-hidden="true">
+        <svg class="scene" viewBox="0 0 480 320" preserveAspectRatio="xMidYMax slice">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bcd6dc"/><stop offset="1" stop-color="#f3e3c4"/></linearGradient>
+            <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a5536"/><stop offset="1" stop-color="#5a3d26"/></linearGradient>
+            <pattern id="stripes" width="40" height="80" patternUnits="userSpaceOnUse"><rect width="20" height="80" fill="#6f9a45"/><rect x="20" width="20" height="80" fill="#5f8b3a"/></pattern>
+            <pattern id="gravel" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#cdb894"/><circle cx="2" cy="3" r="1.4" fill="#b29c76"/><circle cx="7" cy="7" r="1.2" fill="#e2d2b1"/><circle cx="8" cy="2" r=".9" fill="#a38d68"/></pattern>
+          </defs>
+          <rect class="sky" width="480" height="320" fill="url(#sky)"/>
+          <circle class="sun" cx="390" cy="70" r="26" fill="#f6c86b"/>
+          <g class="cloud cloud--a"><ellipse cx="90" cy="60" rx="34" ry="11" fill="#fff" opacity=".8"/><ellipse cx="112" cy="52" rx="20" ry="11" fill="#fff" opacity=".8"/></g>
+          <g class="cloud cloud--b"><ellipse cx="260" cy="40" rx="26" ry="8" fill="#fff" opacity=".7"/><ellipse cx="276" cy="34" rx="14" ry="8" fill="#fff" opacity=".7"/></g>
+          <g class="world">
+            <g class="el el--trees">
+              <circle cx="40" cy="120" r="38" fill="#4d6b45"/><circle cx="440" cy="115" r="42" fill="#4d6b45"/><circle cx="470" cy="140" r="30" fill="#3f5c3a"/><circle cx="10" cy="140" r="26" fill="#3f5c3a"/>
+            </g>
+            <rect x="0" y="196" width="480" height="124" fill="url(#soil)"/>
+            <!-- brick wall -->
+            <g><rect x="20" y="160" width="440" height="40" fill="#9c5a43"/>
+              <g stroke="#7f4635" stroke-width="1" opacity=".7"><line x1="20" y1="170" x2="460" y2="170"/><line x1="20" y1="180" x2="460" y2="180"/><line x1="20" y1="190" x2="460" y2="190"/></g></g>
+            <!-- fence: posts + slats -->
+            <g class="el el--fence">
+              <g fill="#b98f5c"><rect x="26" y="96" width="8" height="104" style="--i:0"/><rect x="136" y="96" width="8" height="104" style="--i:1"/><rect x="236" y="96" width="8" height="104" style="--i:2"/><rect x="336" y="96" width="8" height="104" style="--i:3"/><rect x="446" y="96" width="8" height="104" style="--i:4"/></g>
+              <g class="slats" fill="#dcbf8d">
+                <rect x="20" y="100" width="440" height="7" style="--i:0"/><rect x="20" y="110" width="440" height="7" style="--i:1"/><rect x="20" y="120" width="440" height="7" style="--i:2"/><rect x="20" y="130" width="440" height="7" style="--i:3"/><rect x="20" y="140" width="440" height="7" style="--i:4"/><rect x="20" y="150" width="440" height="7" style="--i:5"/>
+              </g>
+              <g class="gate"><rect x="210" y="98" width="60" height="102" fill="#cfae78"/><g fill="#b78f59"><rect x="210" y="110" width="60" height="3"/><rect x="210" y="130" width="60" height="3"/><rect x="210" y="150" width="60" height="3"/><rect x="210" y="170" width="60" height="3"/><rect x="210" y="190" width="60" height="3"/></g><rect x="210" y="98" width="60" height="102" fill="none" stroke="#a9824f" stroke-width="3"/><circle cx="262" cy="150" r="2.5" fill="#2a2a2a"/></g>
+            </g>
+            <!-- driveway gravel -->
+            <path class="el el--drive" d="M0 214 L120 214 L150 320 L0 320 Z" fill="url(#gravel)"/>
+            <!-- turf -->
+            <g class="el el--turf"><path d="M120 214 L360 214 L400 300 L80 300 Z" fill="url(#stripes)"/><path d="M120 214 L360 214 L400 300 L80 300 Z" fill="none" stroke="#c9a46c" stroke-width="3"/></g>
+            <!-- decking -->
+            <g class="el el--deck"><path d="M360 214 L480 214 L480 300 L400 300 Z" fill="#b07e4c"/><g stroke="#8b5f36" stroke-width="2"><line x1="368" y1="226" x2="480" y2="226"/><line x1="374" y1="240" x2="480" y2="240"/><line x1="381" y1="255" x2="480" y2="255"/><line x1="388" y1="270" x2="480" y2="270"/><line x1="394" y1="285" x2="480" y2="285"/></g></g>
+            <!-- paving -->
+            <g class="el el--paving"><g fill="#d9d2c4" stroke="#b9b1a2" stroke-width="2">
+              <rect x="0" y="300" width="80" height="20" style="--i:0"/><rect x="80" y="300" width="80" height="20" style="--i:1"/><rect x="160" y="300" width="80" height="20" style="--i:2"/><rect x="240" y="300" width="80" height="20" style="--i:3"/><rect x="320" y="300" width="80" height="20" style="--i:4"/><rect x="400" y="300" width="80" height="20" style="--i:5"/></g></g>
+            <!-- carpentry: oak planter + olive -->
+            <g class="el el--carp"><rect x="208" y="196" width="64" height="26" fill="#a9824f"/><g stroke="#8a6a3e" stroke-width="2"><line x1="208" y1="205" x2="272" y2="205"/><line x1="208" y1="214" x2="272" y2="214"/></g><path d="M240 196 C238 180 232 172 226 164 M240 196 C242 178 250 170 256 162" stroke="#6f5b44" stroke-width="4" fill="none"/><circle cx="226" cy="150" r="20" fill="#93a37c"/><circle cx="256" cy="148" r="22" fill="#a2b18b"/><circle cx="241" cy="136" r="18" fill="#8a9a73"/></g>
+            <!-- planting -->
+            <g class="el el--plants">
+              <g style="--i:0"><circle cx="60" cy="204" r="14" fill="#55803f"/><circle cx="54" cy="194" r="3" fill="#9b8fd6"/><circle cx="64" cy="190" r="3" fill="#9b8fd6"/><circle cx="70" cy="198" r="3" fill="#9b8fd6"/></g>
+              <g style="--i:1"><path d="M100 214 q-6 -26 -14 -34 M100 214 q0 -30 2 -38 M100 214 q6 -24 14 -32" stroke="#c7b277" stroke-width="2.5" fill="none"/></g>
+              <g style="--i:2"><circle cx="160" cy="206" r="11" fill="#3f6b36"/></g>
+              <g style="--i:3"><circle cx="320" cy="206" r="11" fill="#3f6b36"/></g>
+              <g style="--i:4"><path d="M380 214 q-6 -26 -14 -34 M380 214 q0 -30 2 -38 M380 214 q6 -24 14 -32" stroke="#c7b277" stroke-width="2.5" fill="none"/></g>
+              <g style="--i:5"><circle cx="420" cy="204" r="14" fill="#55803f"/><circle cx="414" cy="194" r="3" fill="#f2f2f2"/><circle cx="424" cy="190" r="3" fill="#f2f2f2"/><circle cx="430" cy="198" r="3" fill="#f2f2f2"/></g>
+            </g>
+            <!-- name sign -->
+            <g class="el el--sign"><rect x="296" y="232" width="4" height="40" fill="#8a6a3e"/><rect x="250" y="222" width="96" height="24" rx="2" fill="#2c403c"/><text class="sign__text" x="298" y="238" text-anchor="middle" fill="#f4f1ea" font-family="Jost, sans-serif" font-size="11" letter-spacing="1">YOUR GARDEN</text></g>
+          </g>
+          <g class="confetti"></g>
+        </svg>
+        <div class="board__hud">
+          <span class="board__level">Level <b class="lvl">1</b> · <span class="lvl-name">Bare ground</span></span>
+          <span class="board__xp"><span class="board__xpbar"><i></i></span><b class="xp">0</b> pts</span>
+        </div>
+        <div class="toasts"></div>
       </div>
-      <label>Email<input name="email" type="email" required autocomplete="email"></label>
-      <label>Postcode<input name="postcode" autocomplete="postal-code"></label>
-      <fieldset class="chips">
-        <legend>I'm interested in</legend>
-        <label><input type="checkbox" name="interest" value="Fencing & gates"><span>Fencing &amp; gates</span></label>
-        <label><input type="checkbox" name="interest" value="Paving & patios"><span>Paving &amp; patios</span></label>
-        <label><input type="checkbox" name="interest" value="Turf & lawns"><span>Turf &amp; lawns</span></label>
-        <label><input type="checkbox" name="interest" value="Decking"><span>Decking</span></label>
-        <label><input type="checkbox" name="interest" value="Driveways"><span>Driveways</span></label>
-        <label><input type="checkbox" name="interest" value="Carpentry"><span>Carpentry</span></label>
-      </fieldset>
-      <label>Tell us about your project<textarea name="message" rows="4"></textarea></label>
-      <button class="btn btn--light" type="submit">Send enquiry</button>
-      <p class="form__note">Opens your email app with your details filled in.</p>
-    </form>
+
+      <!-- the steps -->
+      <form class="steps-form" id="enquiry" novalidate>
+        <div class="slats-progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <p class="step-count" aria-live="polite">Step <b>1</b> of 5</p>
+
+        <fieldset class="step is-active" data-step="1">
+          <legend>What are we building?</legend>
+          <p class="step__hint">Pick as many as you like. Each one goes straight into your garden.</p>
+          <div class="tiles">
+            <label class="tile"><input type="checkbox" name="interest" value="Fencing & gates" data-el="fence"><span><svg viewBox="0 0 32 32"><path d="M5 9h22M5 14h22M5 19h22M5 24h22M8 6v21M24 6v21"/></svg>Fencing &amp; gates</span></label>
+            <label class="tile"><input type="checkbox" name="interest" value="Turf & lawns" data-el="turf"><span><svg viewBox="0 0 32 32"><path d="M4 26h24M8 26c0-6-2-9-3-11M12 26c0-7 1-11 3-13M17 26c0-6 2-10 5-12M23 26c0-5 1-7 3-9"/></svg>Turf &amp; lawns</span></label>
+            <label class="tile"><input type="checkbox" name="interest" value="Paving & patios" data-el="paving"><span><svg viewBox="0 0 32 32"><path d="M4 8h24v16H4zM4 16h24M12 8v8M20 16v8"/></svg>Paving &amp; patios</span></label>
+            <label class="tile"><input type="checkbox" name="interest" value="Decking" data-el="deck"><span><svg viewBox="0 0 32 32"><path d="M3 22l6-10h20l-6 10zM7 18.5h18M5 22v4M23 22v4"/></svg>Decking</span></label>
+            <label class="tile"><input type="checkbox" name="interest" value="Planting & beds" data-el="plants"><span><svg viewBox="0 0 32 32"><path d="M16 27V14M16 18c-5 0-8-3-8-8 5 0 8 3 8 8zM16 15c0-5 3-8 8-8 0 5-3 8-8 8zM9 27h14"/></svg>Planting &amp; beds</span></label>
+            <label class="tile"><input type="checkbox" name="interest" value="Driveways" data-el="drive"><span><svg viewBox="0 0 32 32"><path d="M11 4L6 28M21 4l5 24M16 6v3M16 13v3M16 20v3"/></svg>Driveways</span></label>
+            <label class="tile"><input type="checkbox" name="interest" value="Carpentry" data-el="carp"><span><svg viewBox="0 0 32 32"><path d="M5 25l13-13M15 9l4-4 8 8-4 4zM5 25l-1 3 3-1"/></svg>Carpentry</span></label>
+            <label class="tile"><input type="checkbox" name="interest" value="Not sure yet" data-el="trees"><span><svg viewBox="0 0 32 32"><path d="M12 12a4 4 0 1 1 6 3.5c-1.5.8-2 1.7-2 3.5M16 24v.5"/></svg>Not sure yet</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="2">
+          <legend>How big is the space?</legend>
+          <p class="step__hint">Slide to roughly match your garden.</p>
+          <div class="size">
+            <input type="range" name="size" min="0" max="3" step="1" value="1" aria-label="Garden size">
+            <div class="size__labels"><span>Courtyard</span><span>Small garden</span><span>Medium</span><span>Large</span></div>
+            <p class="size__readout">Small garden</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="3">
+          <legend>When would you like to start?</legend>
+          <p class="step__hint">Watch the sun move.</p>
+          <div class="chips chips--big">
+            <label><input type="radio" name="timing" value="As soon as possible" data-sun="0"><span>As soon as possible</span></label>
+            <label><input type="radio" name="timing" value="In the next 1–3 months" data-sun="1"><span>Next 1–3 months</span></label>
+            <label><input type="radio" name="timing" value="Later this year" data-sun="2"><span>Later this year</span></label>
+            <label><input type="radio" name="timing" value="Just exploring ideas" data-sun="3"><span>Just exploring</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="4">
+          <legend>Who's the garden for?</legend>
+          <p class="step__hint">Your name goes on the sign.</p>
+          <div class="fields">
+            <label>Name<input name="name" required autocomplete="name" maxlength="40"></label>
+            <label>Email<input name="email" type="email" required autocomplete="email"></label>
+            <div class="form__row">
+              <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+              <label>Postcode<input name="postcode" autocomplete="postal-code"></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="5">
+          <legend>Anything else Oli should know?</legend>
+          <p class="step__hint">Access, ideas, a photo you've seen, anything at all. Optional.</p>
+          <div class="fields">
+            <label>Your project<textarea name="message" rows="5" placeholder="e.g. Narrow side return, want a curved path and climbers…"></textarea></label>
+          </div>
+        </fieldset>
+
+        <div class="step step--done" data-step="6" tabindex="-1">
+          <p class="done__badge">Garden complete</p>
+          <h3 class="h3">Nice one, <span class="done__name">friend</span>.</h3>
+          <p>Your email app should have opened with everything filled in. Just hit send and Oli will be in touch to arrange a visit.</p>
+          <p class="done__alt">Nothing opened? Email <a href="mailto:oliver@chalkprojects.co.uk">oliver@chalkprojects.co.uk</a> or call <a href="tel:+447818005353">07818 005353</a>.</p>
+          <button type="button" class="btn btn--line js-restart">Start again</button>
+        </div>
+
+        <div class="nav-btns">
+          <button type="button" class="btn btn--line js-back" hidden>Back</button>
+          <button type="button" class="btn btn--light js-next">Next <span aria-hidden="true">→</span></button>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
 
@@ -419,5 +560,6 @@
 <a href="tel:+447818005353" class="callbar">Call Oli · 07818 005353</a>
 
 <script src="js/main.js"></script>
+<script src="js/quest.js"></script>
 </body>
 </html>
